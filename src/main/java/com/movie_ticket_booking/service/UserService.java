@@ -1,11 +1,15 @@
 package com.movie_ticket_booking.service;
 
+import com.movie_ticket_booking.dto.logindto.LoginRequestDto;
+import com.movie_ticket_booking.dto.logindto.LoginResponseDto;
 import com.movie_ticket_booking.dto.registerdto.RegisterRequestDto;
 import com.movie_ticket_booking.dto.registerdto.RegisterResponseDto;
 import com.movie_ticket_booking.entity.User;
 import com.movie_ticket_booking.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class UserService {
